@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Little Boss Biryani</title>
+<link rel="icon" href="kid.png">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Caveat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="splash">
+  <img src="kid.png" alt="">
+  <h1>Little Boss Biryani</h1>
+  <p id="sTag">Chhota Boss. Bada Taste!</p>
+  <div class="bar" id="bar"><i></i></div>
+  <div class="langs" id="langs">
+    <button data-l="en">English</button>
+    <button data-l="hi">हिन्दी</button>
+  </div>
+</div>
+
+<header>
+  <div class="brand"><img src="kid.png" alt=""><span>Little Boss Biryani</span></div>
+  <nav>
+    <a href="#pre" data-t="navPre"></a>
+    <a href="#list" data-t="navList"></a>
+    <button id="langBtn"></button>
+  </nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>Little <span style="color:#fff">BOSS</span><small data-t="by"></small></h1>
+    <div class="tag" data-t="tag"></div>
+    <a class="cta" href="#pre" data-t="cta"></a>
+  </div>
+  <img src="kid.png" alt="Little Boss, the chef kid">
+</div>
+
+<main>
+  <section id="pre">
+    <h2 data-t="preTitle"></h2>
+    <p class="sub" data-t="preSub"></p>
+    <form id="form" autocomplete="off">
+      <div class="step"><b>1</b><span data-t="sDate"></span></div>
+      <div class="chips" id="dates"></div>
+
+      <div class="step"><b>2</b><span data-t="sTime"></span></div>
+      <select id="time" required></select>
+
+      <div class="step"><b>3</b><span data-t="sLoc"></span></div>
+      <div class="only" data-t="only"></div>
+      <input type="text" id="loc" maxlength="100" required>
+
+      <div class="step"><b>4</b><span data-t="sFood"></span></div>
+      <div class="menu" id="menu"></div>
+
+      <div class="step"><b>5</b><span data-t="sName"></span></div>
+      <input type="text" id="name" maxlength="40" required>
+
+      <div class="total"><span data-t="total"></span><span id="total">₹0</span></div>
+      <button class="go" id="go" type="submit" data-t="go"></button>
+      <div class="msg" id="msg" role="status"></div>
+    </form>
+  </section>
+
+  <section id="list">
+    <h2 data-t="listTitle"></h2>
+    <p class="sub" data-t="listSub"></p>
+    <div class="orders" id="orders"></div>
+  </section>
+</main>
+<footer data-t="foot"></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
